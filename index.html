@@ -6,6 +6,9 @@
   <title>Academic Angels L.L.C-FZ</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    * {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -16,11 +19,23 @@
     header {
       background-color: #1e3a8a;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
+    nav {
+      background-color: #111827;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
     section {
-      padding: 2rem;
+      padding: 3rem 1rem;
       max-width: 1000px;
       margin: auto;
     }
@@ -46,45 +61,33 @@
     <p>Empowering Education Through Innovation</p>
   </header>
 
-  <section>
-    <h2>Overview</h2>
-    <p>Academic Angels L.L.C-FZ is an innovative educational enterprise based in the UAE. We specialize in digital learning solutions, combining creativity, technology, and research-driven pedagogy to transform education delivery.</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#tnc">UAE T&C</a>
+  </nav>
 
-    <h2>Business Activities</h2>
+  <section id="home">
+    <h2>Welcome to Academic Angels</h2>
+    <p>We specialize in digital learning solutions, combining creativity, technology, and research-driven pedagogy to transform education delivery across the UAE and beyond.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>Academic Angels L.L.C-FZ</strong> is an innovative educational enterprise based in the UAE. We are committed to delivering high-quality, technology-driven education with a human-centered approach. Founded by an experienced educator with over a decade of service in the UAE and India, Academic Angels is born out of real-world classroom insights and a vision for future-ready learning.</p>
+    <p>Our services include:</p>
     <ul>
       <li>Computer Programming Activities</li>
       <li>Educational Technologies Research & Development</li>
-      <li>Other Education Services</li>
+      <li>Online & blended learning solutions</li>
+      <li>Teacher training & consultancy</li>
+      <li>Supplemental student programs</li>
     </ul>
+  </section>
 
-    <h2>Our Vision</h2>
-    <p>To become a leading provider of integrated educational technology and learning platforms that empower students and educators through accessible, engaging, and meaningful learning experiences.</p>
-
-    <h2>Our Mission</h2>
-    <p>To bridge the gap between traditional education and modern technological tools by developing innovative learning solutions tailored to the needs of 21st-century learners.</p>
-
-    <h2>Founder’s Background</h2>
-    <p>Our founder is a passionate educator with over a decade of experience teaching in both the UAE and India. Her deep understanding of diverse student needs and curriculum development laid the foundation for launching Academic Angels as a modern teaching platform.</p>
-
-    <h2>Core Services and Offerings</h2>
-    <ul>
-      <li>Development of educational technology tools and e-learning platforms</li>
-      <li>Online and blended learning courses</li>
-      <li>Research and development in curriculum and teaching tools</li>
-      <li>Teacher training and consultancy</li>
-      <li>Supplemental education programs</li>
-    </ul>
-
-    <h2>Why Choose Academic Angels?</h2>
-    <ul>
-      <li>Led by an experienced educator</li>
-      <li>Blending academic and technical expertise</li>
-      <li>Personalized, inclusive education</li>
-      <li>Research-driven, future-ready solutions</li>
-    </ul>
-
-    <h2>Future Plans</h2>
-    <p>We aim to integrate AI-driven assessments, interactive modules, and global learning networks to create a truly accessible and advanced educational experience.</p>
+  <section id="tnc">
+    <h2>UAE Terms & Conditions</h2>
+    <p>This platform complies with UAE business laws. All educational content and services offered through Academic Angels L.L.C-FZ are governed by applicable regulations and follow ethical standards for online education, data privacy, and consumer protection. For detailed terms, kindly contact us at our official email.</p>
   </section>
 
   <footer>
