@@ -1,97 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Academic Angels L.L.C-FZ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Angels LLC</title>
   <style>
-    * {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #1e3a8a;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #111827;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #1e3a8a;
-      margin-top: 2rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    footer {
-      background-color: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+    /* Fonts & Base Styles */
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    h1, h2, h3 { margin: 0.5em 0; }
+    a { color: #0056b3; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+    /* Hero */
+    .hero { background: #f4f4f4; padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-size: 2.5rem; color: #2c3e50; }
+    .hero p { font-size: 1.2rem; margin-top: 1rem; }
+
+    /* About */
+    .about { background: #fff; padding: 2rem; }
+    .about h2 { color: #2980b9; }
+    .team { display: flex; flex-wrap: wrap; gap: 2rem; }
+    .team-member { flex: 1 1 250px; background: #ecf0f1; padding: 1rem; border-radius: 8px; }
+
+    /* Programs */
+    .programs { background: #f8f8f8; padding: 2rem; }
+    .program { margin-bottom: 1.5rem; }
+    .price { font-weight: bold; color: #27ae60; }
+
+    /* Testimonials */
+    .testimonials { background: #e8f4f8; padding: 2rem; }
+    .testimonial { font-style: italic; border-left: 5px solid #3498db; padding-left: 1rem; margin-bottom: 1rem; }
+
+    /* Contact */
+    .contact { background: #fff; padding: 2rem; }
+    .contact input, .contact textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    .contact button { padding: 0.75rem 2rem; background: #2980b9; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    .contact button:hover { background: #1f6391; }
+
+    /* Footer */
+    footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; }
+    footer a { color: #ecf0f1; margin: 0 0.5rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .team { flex-direction: column; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Academic Angels L.L.C-FZ</h1>
-    <p>Empowering Education Through Innovation</p>
-  </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#tnc">UAE T&C</a>
-  </nav>
-
-  <section id="home">
-    <h2>Welcome to Academic Angels</h2>
-    <p>We specialize in digital learning solutions, combining creativity, technology, and research-driven pedagogy to transform education delivery across the UAE and beyond.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Academic Angels</h1>
+      <p>Empowering Education Through Innovation and Technology</p>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p><strong>Academic Angels L.L.C-FZ</strong> is an innovative educational enterprise based in the UAE. We are committed to delivering high-quality, technology-driven education with a human-centered approach. Founded by an experienced educator with over a decade of service in the UAE and India, Academic Angels is born out of real-world classroom insights and a vision for future-ready learning.</p>
-    <p>Our services include:</p>
-    <ul>
-      <li>Computer Programming Activities</li>
-      <li>Educational Technologies Research & Development</li>
-      <li>Online & blended learning solutions</li>
-      <li>Teacher training & consultancy</li>
-      <li>Supplemental student programs</li>
-    </ul>
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Academic Angels LLC is dedicated to advancing education using cutting-edge technology, research and development, and tailored educational programs.</p>
+      <div class="team">
+        <div class="team-member">
+          <h3>Jane Smith</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <h3>John Doe</h3>
+          <p>Head of Technology</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="tnc">
-    <h2>UAE Terms & Conditions</h2>
-    <p>This platform complies with UAE business laws. All educational content and services offered through Academic Angels L.L.C-FZ are governed by applicable regulations and follow ethical standards for online education, data privacy, and consumer protection. For detailed terms, kindly contact us at our official email.</p>
+  <!-- Programs -->
+  <section class="programs">
+    <div class="container">
+      <h2>Our Programs</h2>
+      <div class="program">
+        <h3>EdTech Research</h3>
+        <p>Innovative R&D initiatives to enhance learning outcomes.</p>
+        <p class="price">Starting at $25</p>
+      </div>
+      <div class="program">
+        <h3>Custom Software</h3>
+        <p>Developing educational platforms and applications.</p>
+        <p class="price">Starting at $25</p>
+      </div>
+      <div class="program">
+        <h3>Training & Workshops</h3>
+        <p>Upskilling educators and learners through hands-on experiences.</p>
+        <p class="price">Starting at $25</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <p class="testimonial">"Academic Angels helped digitize our school’s curriculum seamlessly."</p>
+      <p class="testimonial">"Their workshops empowered our teachers with real skills."</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form onsubmit="event.preventDefault(); alert('Message sent!');">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Academic Angels L.L.C-FZ. All rights reserved.</p>
+    <p>&copy; 2025 Academic Angels LLC</p>
+    <p>
+      <a href="#">LinkedIn</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a>
+    </p>
   </footer>
+
 </body>
 </html>
